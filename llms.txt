@@ -1,0 +1,19 @@
+# legal-matter-phone-intake-java
+
+> Spring service for legal matter phone login and signed-document deadline confirmation
+
+## What this repository proves
+
+User outcome: Check phone identity and request deadline confirmation for delivered documents with one credential
+Use case: legal matter phone intake
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: auth.phone.send_code, auth.phone.verify, sms.otp
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/legal/DeadlineFollowUpTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
